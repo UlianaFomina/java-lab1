@@ -14,6 +14,9 @@ class Main {
                 String iceCreamSirup = parts[1];
                 breakfast[breakfastIndex] = new IceCream(iceCreamSirup);
             }
+            if(parts[0].equals("Cheese")){
+                breakfast[breakfastIndex] = new Сheese(parts[0]);
+            }
             if(arg.startsWith("-")){
                 countProduct = arg;
                 countProduct = countProduct.substring(1);
